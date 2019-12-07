@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>document</title>
+<script type="text/javascript">
+
+function display() {
+	var friends = document.getElementById("friend_count").value;
+	//console.log(friend_counnt);
+if (friends > 10) {
+        alert(" no.of friends exceeded");
+    } else {
+        if (document.getElementById("casual_dress").checked) 
+		{
+            if (document.F1.T3[0].selected == true) {
+              window.open("file:///C:/Users/DEBASISH%20DAS/Desktop/BLOUSON.html");            
+            } else if (document.F1.T3[1].selected == true) {
+                alert(" You got SHIRT DRESS");
+                
+            } else if (document.F1.T3[2].selected == true) {
+                alert(" You got TRENCH DRESS");
+               
+            } else if (document.F1.T3[3].selected == true) {
+                alert(" You got HIGH-LOW DRESS");
+                
+            } else if (document.F1.T3[4].selected == true) {
+                window.open("file:///C:/Users/DEBASISH%20DAS/Desktop/skater%20dress.html");
+               
+            } else if (document.F1.T3[5].selected == true) {
+                alert(" You got MAXI/LONG DRESS:");
+               
+            }
+        }
+        if (document.getElementById("party_dress").checked) {
+            if (document.F1.T3[0].selected) {
+                alert(" You got KAFTAN DRESS:");
+               
+            } else if (document.F1.T3[1].selected) {
+                alert(" You got OFF SHOULDER DRESS:");
+                
+            } else if (document.F1.T3[2].selected) {
+                window.open("file:///C:/Users/DEBASISH%20DAS/Downloads/party.html");
+               
+            } else if (document.F1.T3[3].selected) {
+                alert(" You got FRINGE DETAIL DRESS:");
+               
+            } else if (document.F1.T3[4].selected) {
+                alert(" You got FIT AND FLARE DRESS:");
+               
+            } else if (document.F1.T3[5].selected) {
+                window.alert("file:///C:/Users/DEBASISH%20DAS/Downloads/tulle.html");
+                
+            }
+        }
+	}
+}
+</script>
+</head>
+<body>
+<form name="F1" method="post">
+ENTER NO. OF FRIENDS:
+<input type="text" name="T1" id="friend_count"><BR>
+ENTER YOUR NAME:
+<input type="text" name="T2"><BR>
+SELECT OCCASION:
+<input type="radio" name="R1" id="casual_dress">CASUAL
+<input type="radio" name="R1" id="party_dress">PARTY<BR>
+SELECT SIZE:
+<select name="T3">
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
+<option value="XXL">XXL</option>
+</select><br>
+<input type="submit" name="S1" value="SUBMIT" onClick="display()">
+</form>
+</body>
+</html>
+
+
+
